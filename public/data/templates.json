@@ -1,5 +1,5 @@
 {
-  "version": "1.1.3",
+  "version": "1.2.0",
   "config": [
     {
       "id": "tpl_photo_grid",
@@ -3136,6 +3136,316 @@
         "en"
       ],
       "bestModel": "Gpt-image-2",
+      "baseImage": "no_base_image"
+    },
+    {
+      "id": "tpl_big_isometric_white_arch",
+      "name": {
+        "cn": "BIG 风等距建筑白模分析图",
+        "en": "BIG-Style Isometric White Architectural Diagram"
+      },
+      "content": {
+        "cn": "生成一张等距轴测视角的{{arch_building_name}}的概念建筑白模渲染图\n使用简化的白模搭配极简化的周边环境，参考BIG事务所经典的分析图表达风格\n使用AO效果和细线轮廓描边\n整体风格清新自然，无任何文字\n使用饱和度较低的色彩为周边环境填色，如道路浅灰，植物浅绿，建筑保持白色\n画幅比例：{{ratio}}。",
+        "en": "Generate an isometric axonometric conceptual white mass architectural rendering of {{arch_building_name}}.\nSimplified white massing with minimal surrounding context, in the classic analytical diagram expression style associated with BIG (Bjarke Ingels Group).\nAmbient occlusion (AO) with fine line contour outlining.\nOverall fresh, natural mood, no text anywhere.\nLow-saturation colors for the environment: light gray roads, pale green plants, architecture remains pure white.\nAspect ratio: {{ratio}}."
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/06/kyB1kgmL.png",
+      "imageUrls": [
+        "https://s3.bmp.ovh/2026/05/06/kyB1kgmL.png",
+        "https://s3.bmp.ovh/2026/05/06/78jPIcx7.png"
+      ],
+      "author": "@tanshilong",
+      "selections": {
+        "arch_building_name": {
+          "cn": "古根海姆博物馆",
+          "en": "Solomon R. Guggenheim Museum"
+        },
+        "ratio": {
+          "cn": "3:4竖构图",
+          "en": "3:4 Vertical"
+        }
+      },
+      "tags": [
+        "建筑",
+        "图表",
+        "创意"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "no_base_image"
+    },
+    {
+      "id": "tpl_food_personification_realistic",
+      "name": {
+        "cn": "食物拟人·真人肖像",
+        "en": "Food Personification · Realistic Portrait"
+      },
+      "content": {
+        "cn": "这是我今天的食物，基于这个图，把食物转变为真实人类的形象。帮我生成符合这张照片和性格特征的，将食物进行拟人化的照片，生成结果中不需要原始食物的本体，理解为食物突然变成了具象的拟人化。在生成图像的右上角放上原图，使用回形针将原图放置在生成图像的右上角",
+        "en": "This is my food today. Based on this image, turn the food into the appearance of a real human being. Generate a photographic personification that matches this photo—its vibe, textures, palette, and implied personality—with the dish translated into human form. Do not depict the unchanged original dish as its own standalone subject on the canvas; imagine the food suddenly becomes a concrete, lifelike personification. Place the original image as a small inset in the top-right corner of the final image, held by a paper clip so it looks pinned to the corner like a reference note."
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/06/bwDqm7SE.png",
+      "imageUrls": [
+        "https://s3.bmp.ovh/2026/05/06/bwDqm7SE.png",
+        "https://s3.bmp.ovh/2026/05/06/uEg0sYp7.png"
+      ],
+      "author": "@tanshilong",
+      "selections": {},
+      "source": [
+        {
+          "type": "image",
+          "url": "https://s3.bmp.ovh/2026/05/06/uEg0sYp7.png",
+          "label": {
+            "cn": "今日食物（参考）",
+            "en": "Today's food (reference)"
+          }
+        }
+      ],
+      "tags": [
+        "创意",
+        "人物",
+        "摄影"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "recommend_base_image"
+    },
+    {
+      "id": "tpl_lego_modular_typography_poster",
+      "name": {
+        "cn": "乐高积木字体概念海报",
+        "en": "Modular Brick Typography Concept Poster"
+      },
+      "content": {
+        "cn": "生成一张「乐高积木字体概念海报」。\n请根据主题设计一套原创积木风格字体，不使用官方 LEGO 标志。主标题由真实塑料积木模块拼成，带凸点、厚度、阴影和拼接结构。根据主题含义自动生成一个核心视觉隐喻，并把它做成高级设计展海报：干净留白、网格排版、信息图逻辑、概念板结构。画面包含主标题、概念图形、字体样本、模块结构、颜色图例和细线标注。整体高级、克制、现代、有收藏级海报感，不像儿童玩具广告。比例根据主题自动选择。\n主题：{{lego_typography_theme}}",
+        "en": "Generate a \"LEGO-inspired modular toy-brick typography concept poster\".\nDesign an original brick-style typeface system for the theme—do not include official LEGO trademarks or logos. The main headline must look built from realistic plastic brick modules with studs, thickness, shadows, and clear stacking logic. Based on the theme, invent one core visual metaphor, then execute it as a premium exhibition poster: generous white space, grid-driven layout, infographic logic, concept-board structure. The image should include the main title, metaphor graphic, type specimen, module breakdown, color legend, and fine leader-line annotations. Overall tone: refined, restrained, modern, collector-grade—never a childish toy ad. Choose an appropriate aspect ratio automatically from the theme.\nTheme: {{lego_typography_theme}}"
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/06/BhXVFUvL.png",
+      "author": "@xiaoxiaodong01",
+      "selections": {
+        "lego_typography_theme": {
+          "cn": "AI时代的玩具",
+          "en": "Toys in the Age of AI"
+        }
+      },
+      "tags": [
+        "创意",
+        "图表",
+        "产品"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "no_base_image"
+    },
+    {
+      "id": "tpl_futuristic_sport_editorial_poster",
+      "name": {
+        "cn": "未来感运动装时尚社论海报",
+        "en": "Futuristic Sportswear Editorial Poster"
+      },
+      "content": {
+        "cn": "高级时尚未来感运动装社论海报，动态宽腿站姿的全身女性模特，{{sport_luxe_ensemble}}，{{beauty_editorial_look}}，自信的社论表情，影棚时尚摄影，居中构图，模特身后带有{{inflatable_studio_backdrop}}，粗体超大白色字体「{{hero_typography_word}}」部分位于拍摄对象身后，高级运动品牌广告活动美学，超洁净的照明，柔和漫反射的影棚阴影，奢华街头服饰广告，当代杂志封面设计，极简主义排版，微妙的未来感图形微文本，高度精修的商业时尚后期修图，锐利对焦，电影级柔和对比度，照片写实，高细节，8k",
+        "en": "Premium futuristic sportswear editorial poster, full-length female model in a dynamic wide-legged stance, {{sport_luxe_ensemble}}, {{beauty_editorial_look}}, confident editorial expression, studio fashion photography, centered composition, behind the model {{inflatable_studio_backdrop}}, oversized bold white typography for \"{{hero_typography_word}}\" partially placed behind the subject, premium sport brand campaign aesthetic, ultra-clean lighting, soft diffused studio shadows, luxury streetwear advertising, contemporary magazine cover design, minimalist layout, subtle futuristic graphic micro-type, highly polished commercial fashion retouching, tack-sharp focus, cinematic soft contrast, photorealistic, ultra-detailed, 8K"
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/06/G23TXYtK.png",
+      "author": "@iamsofiaijaz",
+      "selections": {
+        "sport_luxe_ensemble": {
+          "cn": "带有庞大袖子的超大白色极简连帽衫，光滑半透明的降落伞裤，厚重的白橙相间运动鞋",
+          "en": "oversized minimalist white hoodie with enormous voluminous sleeves, glossy semi-transparent parachute pants, chunky white-and-orange sneakers"
+        },
+        "beauty_editorial_look": {
+          "cn": "时尚凌乱的盘发发型，金色抢眼耳环，柔和自然的妆容",
+          "en": "fashionably messy updo bun, bold statement gold earrings, soft natural makeup"
+        },
+        "inflatable_studio_backdrop": {
+          "cn": "大型抽象光滑红粉色有机3D充气软体形状的平滑中性米色渐变背景",
+          "en": "large abstract smooth red-pink organic 3D inflatable soft shapes on a smooth neutral beige gradient backdrop"
+        },
+        "hero_typography_word": {
+          "cn": "just",
+          "en": "just"
+        }
+      },
+      "tags": [
+        "人物",
+        "摄影",
+        "创意"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "no_base_image"
+    },
+    {
+      "id": "tpl_giant_sneaker_fashion_ad",
+      "name": {
+        "cn": "巨型球鞋时尚广告海报",
+        "en": "Giant Sneaker Fashion Campaign Poster"
+      },
+      "content": {
+        "cn": "高端时尚广告海报。年轻女性{{model_styling_outfit}}，随意倚靠在一双约为她身高三倍的巨型白色运动鞋上，鞋侧印有「{{campaign_brand_word}}」字样。{{studio_set_floor}}。粗体巨幅白色无衬线字体「{{campaign_brand_word}}」铺满她身后的整个背景。底部居中为白色斜体标语：{{advert_campaign_tagline}}。右上角小号灰色文字：Designed with GPT Image 2。照片级写实，时尚杂志编辑大片风格，中画幅相机观感。",
+        "en": "A high-end fashion advertisement poster. A young woman {{model_styling_outfit}} leans casually against a giant white sneaker that is 3x her height, the sneaker has \"{{campaign_brand_word}}\" written on its side. {{studio_set_floor}}. Bold massive white sans-serif typography \"{{campaign_brand_word}}\" fills the entire background behind her. Tagline at bottom center in white italic font: \"{{advert_campaign_tagline}}\" Small text top-right corner reads \"Designed with GPT Image 2\" in grey. Photorealistic, editorial magazine style, medium format camera look."
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/06/PCBDPwng.png",
+      "author": "@Strength04_X",
+      "selections": {
+        "campaign_brand_word": {
+          "cn": "APEX",
+          "en": "APEX"
+        },
+        "model_styling_outfit": {
+          "cn": "身穿薄荷绿短款防风外套与乳白色宽松慢跑裤",
+          "en": "in a mint cropped windbreaker with cream oversized joggers"
+        },
+        "studio_set_floor": {
+          "cn": "暖沙色柔光环境与浅琥珀色打蜡地面",
+          "en": "warm sand-toned soft light with lightly amber-waxed glossy floorboards"
+        },
+        "advert_campaign_tagline": {
+          "cn": "Where comfort meets ambition.",
+          "en": "Where comfort meets ambition."
+        }
+      },
+      "tags": [
+        "人物",
+        "摄影",
+        "产品"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "no_base_image"
+    },
+    {
+      "id": "tpl_iconic_architecture_art_poster",
+      "name": {
+        "cn": "建筑哲学艺术海报",
+        "en": "Iconic Architecture Art Poster"
+      },
+      "content": {
+        "cn": "以知名建筑「{{iconic_architecture}}」为场景，制作一个高端的「{{poster_art_style}}」海报。\n海报中心是建筑的插画形式表达；背景为一个英文单词，以巨大加粗的英文字体排布，气质需与建筑相匹配；周边配以描述该建筑设计哲学的小字排版。\n整体以一种极其高端的当代艺术海报形式呈现。\n用色搭配克制不张扬：色面与线条可呼应建筑构件，亦可作为建筑整体向外的一部分延展。",
+        "en": "Create a premium {{poster_art_style}} poster centered on the iconic building {{iconic_architecture}}.\nAt the center, present the architecture as a refined editorial illustration. Behind it, place ONE English keyword in massive ultra-bold condensed sans-serif typography that emotionally and conceptually matches the building; surround with micro-type articulating design philosophy on a restrained grid.\nPresent as collectors'-grade contemporary architectural art.\nUse a subdued palette coordinated with the architecture—color planes and linework may read as discrete structural echoes or as quiet outward extensions from the massing."
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/06/DLtOVgSJ.png",
+      "imageUrls": [
+        "https://s3.bmp.ovh/2026/05/06/DLtOVgSJ.png",
+        "https://s3.bmp.ovh/2026/05/06/gXjFzCpe.png"
+      ],
+      "author": "@tanshilong",
+      "selections": {
+        "iconic_architecture": {
+          "cn": "范斯沃斯住宅（密斯·凡·德罗）",
+          "en": "Farnsworth House (Mies van der Rohe)"
+        },
+        "poster_art_style": {
+          "cn": "极简主义",
+          "en": "minimalist"
+        }
+      },
+      "tags": [
+        "建筑",
+        "创意",
+        "图表"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "no_base_image"
+    },
+    {
+      "id": "tpl_mirror_selfie_chibi_clones",
+      "name": {
+        "cn": "镜子自拍·Q版迷你自己",
+        "en": "Mirror Selfie · Chibi Mini-Mes"
+      },
+      "content": {
+        "cn": "一位年轻女性在极简现代的家中拍镜子自拍，{{casual_mirror_outfit}}。她周围是可爱的Q版迷你版自己，{{chibi_clone_manner}}。{{cozy_mirror_room}}。{{selfie_render_blend}}。",
+        "en": "A young woman takes a mirror selfie in a minimal modern home, {{casual_mirror_outfit}}. Cute chibi mini versions of herself surround her, {{chibi_clone_manner}}. {{cozy_mirror_room}}. {{selfie_render_blend}}."
+      },
+      "imageUrl": "https://img.wjwj.top/2026/05/07/b84c26a465935281af35511c690f69ba.png",
+      "author": "@Sairah_0",
+      "selections": {
+        "casual_mirror_outfit": {
+          "cn": "穿着全套黑色的休闲装，斜挎着一个包，头上戴着太阳镜",
+          "en": "wearing an all-black relaxed casual outfit with a crossbody bag and sunglasses perched on her head"
+        },
+        "chibi_clone_manner": {
+          "cn": "摆出各种俏皮的姿势（跳跃、坐着、比耶、喝珍珠奶茶），有着明亮闪亮的大眼睛和柔和的卡通风格",
+          "en": "striking playful poses (jumping, sitting, peace sign, sipping bubble tea) with bright sparkling eyes and a soft cartoon look"
+        },
+        "cozy_mirror_room": {
+          "cn": "背景包括一盆盆栽、木桌、中性色调的装饰和带框艺术品",
+          "en": "The background includes a potted plant, a wooden table, neutral-toned décor, and framed artwork"
+        },
+        "selfie_render_blend": {
+          "cn": "柔和的自然光线，舒适的氛围美学，白色的涂鸦闪光和爱心，现实主义与可爱的3D卡通风格的混合，高细节",
+          "en": "Soft natural light, cozy lifestyle aesthetic, white doodled sparkles and hearts, hybrid of photorealism and cute 3D cartoon, highly detailed"
+        }
+      },
+      "tags": [
+        "人物",
+        "摄影",
+        "卡通"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
+      "baseImage": "recommend_base_image"
+    },
+    {
+      "id": "tpl_lego_landmark_street_film",
+      "name": {
+        "cn": "乐高巨砖地标街拍",
+        "en": "LEGO Landmark Street Snap"
+      },
+      "content": {
+        "cn": "创作一张极具创意的图片：一张经典建筑的街拍图，模拟行人在街上拍摄的建筑照片，但要具备建筑可视化的构图与美感。形成反差的是，主体建筑由巨大的乐高块构建而成——就像经典乐高颗粒以与真实世界相融的尺度巨兽化存在，凸点与拼缝清晰可读。核心建筑为「{{iconic_architecture}}」。拍摄风格：{{street_film_photography}}。",
+        "en": "Create a highly creative image: a street photograph of a classic landmark, as if a passerby shot it from the sidewalk, yet keep the disciplined composition and formal beauty of architectural visualization. The twist: the entire landmark is built from life-scaled LEGO bricks—giant studs and interlocking seams at real-world proportions, reading as a plausible civic volume. Core building: {{iconic_architecture}}. Photographic treatment: {{street_film_photography}}."
+      },
+      "imageUrl": "https://s3.bmp.ovh/2026/05/09/SShOX699.png",
+      "imageUrls": [
+        "https://s3.bmp.ovh/2026/05/09/SShOX699.png",
+        "https://s3.bmp.ovh/2026/05/09/65wYC55o.png",
+        "https://s3.bmp.ovh/2026/05/09/WQcfpVIz.png"
+      ],
+      "author": "@tanshilong",
+      "selections": {
+        "iconic_architecture": {
+          "cn": "伦敦劳埃德大厦（理查·罗杰斯）",
+          "en": "Lloyd's Building, London (Richard Rogers)"
+        },
+        "street_film_photography": {
+          "cn": "90年代经典街拍质感，FujiFilm 胶片感：细腻颗粒、略褪色与柔和对比，阴天漫射自然光",
+          "en": "1990s classic street-snap feel with Fujifilm texture—fine grain, gentle fade, soft contrast, diffused overcast daylight"
+        }
+      },
+      "tags": [
+        "建筑",
+        "摄影",
+        "创意"
+      ],
+      "language": [
+        "cn",
+        "en"
+      ],
+      "bestModel": "GPT-image-2",
       "baseImage": "no_base_image"
     }
   ]

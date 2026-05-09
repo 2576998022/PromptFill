@@ -2881,6 +2881,526 @@ export const INITIAL_BANKS = {
       { cn: "极简网格", en: "Minimalist Grid" },
       { cn: "磁贴设计", en: "Tile Design" }
     ]
+  },
+
+  arch_building_name: {
+    label: { cn: "建筑名称", en: "Building Name" },
+    category: "location",
+    options: [
+      { cn: "古根海姆博物馆", en: "Solomon R. Guggenheim Museum" },
+      { cn: "蓬皮杜艺术中心", en: "Centre Pompidou" },
+      { cn: "悉尼歌剧院", en: "Sydney Opera House" },
+      { cn: "央视总部大楼（大裤衩）", en: "CCTV Headquarters" },
+      { cn: "流水别墅", en: "Fallingwater" },
+      { cn: "北京大兴国际机场", en: "Beijing Daxing International Airport" },
+      { cn: "上海中心大厦", en: "Shanghai Tower" },
+      { cn: "卢浮宫玻璃金字塔", en: "Louvre Pyramid" },
+      { cn: "圣家堂", en: "Sagrada Família" },
+      { cn: "国家体育场（鸟巢）", en: "Beijing National Stadium (Bird's Nest)" }
+    ]
+  },
+
+  lego_typography_theme: {
+    label: { cn: "海报主题", en: "Poster Theme" },
+    category: "other",
+    options: [
+      { cn: "AI时代的玩具", en: "Toys in the Age of AI" },
+      { cn: "算法与童年", en: "Algorithms and Childhood" },
+      { cn: "云端造梦工厂", en: "Cloud Dream Factory" },
+      { cn: "模块化好奇心", en: "Modular Curiosity" },
+      { cn: "数字孪生游乐场", en: "Digital Twin Playground" },
+      { cn: "创造力拼装指南", en: "Creativity Assembly Guide" },
+      { cn: "人机共玩的未来", en: "Human–Machine Co-Play Futures" },
+      { cn: "像素与颗粒的对话", en: "Dialogue of Pixels and Grains" },
+      { cn: "温柔的智能体", en: "Gentle Intelligent Agents" },
+      { cn: "造物者的积木箱", en: "The Creator's Brick Box" }
+    ]
+  },
+
+  sport_luxe_ensemble: {
+    label: { cn: "运动奢潮造型", en: "Sport-Luxe Outfit" },
+    category: "item",
+    options: [
+      {
+        cn: "带有庞大袖子的超大白色极简连帽衫，光滑半透明的降落伞裤，厚重的白橙相间运动鞋",
+        en: "oversized minimalist white hoodie with enormous voluminous sleeves, glossy semi-transparent parachute pants, chunky white-and-orange sneakers"
+      },
+      {
+        cn: "哑光黑色技术感风衣式连帽外套，炭灰色机能束脚裤，银灰厚底跑鞋",
+        en: "matte black tech-shell hooded windbreaker, charcoal gray technical cinched pants, silver-gray chunky running shoes"
+      },
+      {
+        cn: "珍珠白带反光条的短款面包羽绒服，雾面深蓝阔腿尼龙裤，荧光绿鞋带机能鞋",
+        en: "pearl-white short puffer with reflective stripes, matte navy wide nylon pants, tech sneakers with neon green laces"
+      },
+      {
+        cn: "冰灰半透明叠穿长袖与雕塑感抹胸，金属银高腰运动短裙，黑白熊猫配色限量球鞋",
+        en: "icy gray layered sheer long sleeves with sculptural bandeau, metallic silver high-waist sport skirt, black-and-white panda limited sneakers"
+      },
+      {
+        cn: "燕麦色垂坠卫衣与可充气感绗缝马甲，浅香槟降落伞裤，奶油白厚底训练鞋",
+        en: "oatmeal draped sweatshirt with quilted inflatable-feel vest, champagne parachute pants, cream chunky trainers"
+      },
+      {
+        cn: "电光丁香紫短款防风夹克，黑曜石漆光 Legging，透明气垫厚底鞋",
+        en: "electric lilac cropped windbreaker, obsidian glossy leggings, transparent air-cushion platform sneakers"
+      },
+      {
+        cn: "赤陶红单肩解构剪裁卫衣，沙色半透明叠层长裤，做旧米白复古跑鞋",
+        en: "terracotta one-shoulder deconstructed sweatshirt, sand-toned sheer layered trousers, distressed off-white retro runners"
+      },
+      {
+        cn: "钴蓝无缝压胶冲锋衣，石墨黑阔腿裤，霓虹粉细节的高帮篮球鞋",
+        en: "cobalt blue seam-taped shell jacket, graphite black wide-leg pants, high-top basketball shoes with neon pink accents"
+      }
+    ]
+  },
+
+  beauty_editorial_look: {
+    label: { cn: "妆发与配饰", en: "Hair & Beauty" },
+    category: "character",
+    options: [
+      {
+        cn: "时尚凌乱的盘发发型，金色抢眼耳环，柔和自然的妆容",
+        en: "fashionably messy updo bun, bold statement gold earrings, soft natural makeup"
+      },
+      {
+        cn: "湿发感低马尾，细长银质耳线，清透裸感底妆与裸色唇",
+        en: "sleek wet-look low ponytail, slim silver ear threads, glass-skin nude base and nude lips"
+      },
+      {
+        cn: "锋利中分直发，几何亚克力耳环，哑光烟棕眼妆与克制修容",
+        en: "sharp center-part straight hair, geometric acrylic earrings, matte smoked-brown eye makeup with restrained contour"
+      },
+      {
+        cn: "慵懒半扎高发髻，珍珠耳钉，雾面蜜桃腮红与微光高光",
+        en: "lazy half-up topknot, pearl studs, matte peach blush with subtle highlight"
+      },
+      {
+        cn: "超短精灵剪层次发，环形金属耳饰，冷调 rose 裸妆",
+        en: "layered pixie crop, hoop metal jewelry, cool-toned rose nude makeup"
+      },
+      {
+        cn: "蓬松高颅顶低盘发，水晶吊坠耳环，健康光泽感肤色与淡烟熏",
+        en: "full low bun with lifted root volume, crystal drop earrings, healthy luminous skin with soft smoky eyes"
+      },
+      {
+        cn: "紧束光滑马尾，粗链条耳骨夹，干净锋利眉形与正红唇",
+        en: "slick tight ponytail, chunky chain ear cuff, crisp brows with classic red lips"
+      },
+      {
+        cn: "侧分波浪长发，单颗水滴钻耳饰，暖调香槟眼影",
+        en: "side-parted soft waves, single teardrop crystal earring, warm champagne eyeshadow"
+      }
+    ]
+  },
+
+  inflatable_studio_backdrop: {
+    label: { cn: "充气装置与背景", en: "Inflatable Set & Backdrop" },
+    category: "visual",
+    options: [
+      {
+        cn: "大型抽象光滑红粉色有机3D充气软体形状的平滑中性米色渐变背景",
+        en: "large abstract smooth red-pink organic 3D inflatable soft shapes on a smooth neutral beige gradient backdrop"
+      },
+      {
+        cn: "淡薰衣草与电紫双色有机充气雕塑，冷雾灰无缝影棚渐变",
+        en: "lavender and electric purple organic inflatable sculptures with a cool fog-gray seamless studio gradient"
+      },
+      {
+        cn: "薄荷绿与青玉色透明感充气管道交织，浅海蓝到乳白的纵向渐变",
+        en: "mint and jade translucent inflatable tubes interwoven, seafoam-to-cream vertical gradient"
+      },
+      {
+        cn: "沙金色沙丘状充气体与镜面反射地台，暖白柔光雾背景",
+        en: "sand-gold dune-like inflatables on a reflective stage, warm white hazy studio background"
+      },
+      {
+        cn: "炭黑与铬银的未来感堆叠充气块，暗角压暗的高级灰场域",
+        en: "stacked charcoal-and-chrome futuristic inflatable blocks, premium gray field with subtle vignette"
+      },
+      {
+        cn: "珊瑚橘与玫瑰粉碎形充气花瓣团簇，柔粉腮红式渐变天空",
+        en: "coral and blush fragmented inflatable petal clusters, soft rose-blush gradient sky"
+      },
+      {
+        cn: "半透明乳胶感月白充气环与拱门，极浅珍珠灰环境",
+        en: "semi-opaque latex-like moon-white inflatable rings and arches, ultra-light pearl-gray environment"
+      }
+    ]
+  },
+
+  hero_typography_word: {
+    label: { cn: "身后主标题字", en: "Hero Type Word" },
+    category: "other",
+    options: [
+      { cn: "just", en: "just" },
+      { cn: "RUN", en: "RUN" },
+      { cn: "AIR", en: "AIR" },
+      { cn: "FLOW", en: "FLOW" },
+      { cn: "VOID", en: "VOID" },
+      { cn: "RISE", en: "RISE" },
+      { cn: "PULSE", en: "PULSE" },
+      { cn: "SHIFT", en: "SHIFT" }
+    ]
+  },
+
+  campaign_brand_word: {
+    label: { cn: "品牌主视觉词", en: "Campaign Brand Word" },
+    category: "other",
+    options: [
+      { cn: "STRIDE", en: "STRIDE" },
+      { cn: "DRIFT", en: "DRIFT" },
+      { cn: "APEX", en: "APEX" },
+      { cn: "LUMEN", en: "LUMEN" },
+      { cn: "FORGE", en: "FORGE" },
+      { cn: "PRISM", en: "PRISM" },
+      { cn: "ECHO", en: "ECHO" },
+      { cn: "VAULT", en: "VAULT" }
+    ]
+  },
+
+  model_styling_outfit: {
+    label: { cn: "模特着装", en: "Model Outfit" },
+    category: "character",
+    options: [
+      {
+        cn: "身穿全身白色超宽松运动套装",
+        en: "in an all-white oversized sweatsuit"
+      },
+      {
+        cn: "身穿燕麦灰与纯白拼色宽松卫衣套装",
+        en: "in an oatmeal-gray and pure white tonal oversized hoodie and sweatpants set"
+      },
+      {
+        cn: "身穿黑色极简收腰运动夹克与同色阔腿运动裤",
+        en: "in a black minimalist cropped track jacket with matching wide-leg sweatpants"
+      },
+      {
+        cn: "身穿薄荷绿短款防风外套与乳白色宽松慢跑裤",
+        en: "in a mint cropped windbreaker with cream oversized joggers"
+      },
+      {
+        cn: "身穿海军蓝丝绒质感运动卫衣与侧边条纹裤",
+        en: "in a navy plush velour sweatshirt with side-stripe athletic pants"
+      },
+      {
+        cn: "身穿珍珠白解构剪裁拉链上衣与收口运动裤",
+        en: "in a pearl-white deconstructed zip sweatshirt with cuffed sweatpants"
+      },
+      {
+        cn: "身穿沙色工装感连帽马甲叠穿白色长袖内搭与阔腿裤",
+        en: "in a sand utility hoodie vest layered over a white long-sleeve and wide cargo sweats"
+      },
+      {
+        cn: "身穿电光丁香紫哑光运动连体衣外罩廓形白衬衫",
+        en: "in a lilac matte athletic jumpsuit layered under an oversized crisp white shirt"
+      }
+    ]
+  },
+
+  studio_set_floor: {
+    label: { cn: "影棚与地面", en: "Studio Backdrop & Floor" },
+    category: "visual",
+    options: [
+      {
+        cn: "浅蓝色影棚背景，带有高光反射的光滑亮面地面",
+        en: "Light blue studio background with reflective glossy floor"
+      },
+      {
+        cn: "冰川灰渐变无缝背景，湿润感镜面地面反射鞋与人物轮廓",
+        en: "Ice-gray gradient seamless backdrop, wet-look mirrored floor reflecting the sneaker silhouette"
+      },
+      {
+        cn: "柔和的雾粉到乳白渐变，半哑光釉面地面",
+        en: "Soft blush-to-cream gradient, semi-gloss enamel studio floor"
+      },
+      {
+        cn: "深炭黑无底穴式影棚，高抛光黑曜石地板",
+        en: "deep charcoal infinite black studio void, polished obsidian-black floor"
+      },
+      {
+        cn: "冷薄荷绿单色背景与轻微雾化地面高光",
+        en: "cool mint monochrome cyclorama with subtle haze and floor highlights"
+      },
+      {
+        cn: "暖沙色柔光环境与浅琥珀色打蜡地面",
+        en: "warm sand-toned soft light with lightly amber-waxed glossy floorboards"
+      },
+      {
+        cn: "纯白无限延伸背景与漆光地面，边缘微冷蓝遮光",
+        en: "pure white infinity cyc with lacquered floor, faint cool-blue falloff at edges"
+      }
+    ]
+  },
+
+  advert_campaign_tagline: {
+    label: { cn: "底部广告标语", en: "Campaign Tagline" },
+    category: "other",
+    options: [
+      {
+        cn: "Walk into your next chapter.",
+        en: "Walk into your next chapter."
+      },
+      {
+        cn: "Step outside the timeline.",
+        en: "Step outside the timeline."
+      },
+      {
+        cn: "Lace up. Level up.",
+        en: "Lace up. Level up."
+      },
+      {
+        cn: "Momentum is your birthright.",
+        en: "Momentum is your birthright."
+      },
+      {
+        cn: "Soft landing. Loud statement.",
+        en: "Soft landing. Loud statement."
+      },
+      {
+        cn: "Where comfort meets ambition.",
+        en: "Where comfort meets ambition."
+      },
+      {
+        cn: "未来从脚下开始。",
+        en: "Your future begins at your feet."
+      },
+      {
+        cn: "把下一步走成主场。",
+        en: "Make your next step your spotlight."
+      }
+    ]
+  },
+
+  iconic_architecture: {
+    label: { cn: "知名建筑", en: "Iconic Architecture" },
+    category: "location",
+    options: [
+      { cn: "范斯沃斯住宅（密斯·凡·德罗）", en: "Farnsworth House (Mies van der Rohe)" },
+      { cn: "萨伏伊别墅（勒·柯布西耶）", en: "Villa Savoye (Le Corbusier)" },
+      { cn: "流水别墅（赖特）", en: "Fallingwater (Frank Lloyd Wright)" },
+      { cn: "悉尼歌剧院（乌松）", en: "Sydney Opera House (Jørn Utzon)" },
+      { cn: "金贝尔美术馆（路易·康）", en: "Kimbell Art Museum (Louis Kahn)" },
+      { cn: "巴特罗之家（高迪）", en: "Casa Batlló (Antoni Gaudí)" },
+      { cn: "光之教堂（安藤忠雄）", en: "Church of the Light (Tadao Ando)" },
+      { cn: "古根海姆博物馆纽约馆（赖特）", en: "Solomon R. Guggenheim Museum (Frank Lloyd Wright)" },
+      { cn: "国家美术馆东馆（贝聿铭）", en: "National Gallery East Building (I. M. Pei)" },
+      { cn: "耶鲁大学英国艺术中心（路易·康）", en: "Yale Center for British Art (Louis Kahn)" },
+      { cn: "毕尔巴鄂古根海姆博物馆（弗兰克·盖里）", en: "Guggenheim Museum Bilbao (Frank Gehry)" },
+      { cn: "巴塞罗那德国馆（密斯·凡·德罗）", en: "Barcelona Pavilion (Mies van der Rohe)" },
+      { cn: "朗香教堂（勒·柯布西耶）", en: "Notre Dame du Haut Chapel, Ronchamp (Le Corbusier)" },
+      { cn: "香港中银大厦（贝聿铭）", en: "Bank of China Tower Hong Kong (I. M. Pei)" },
+      { cn: "伦敦劳埃德大厦（理查·罗杰斯）", en: "Lloyd's Building, London (Richard Rogers)" }
+    ]
+  },
+
+  poster_art_style: {
+    label: { cn: "海报风格", en: "Poster Aesthetic" },
+    category: "visual",
+    options: [
+      { cn: "极简主义", en: "minimalist" },
+      { cn: "构成主义倾向", en: "constructivist-leaning" },
+      { cn: "新客观与理性排版", en: "Neo-objective rational layout" },
+      { cn: "粗野诗意", en: "brutalist-poetic" },
+      { cn: "日本物派式克制", en: "Mono-ha-inspired restraint" },
+      { cn: "国际式纯粹派", en: "International Style purism" },
+      { cn: "当代展览图录风", en: "contemporary exhibition catalogue" },
+      { cn: "博物馆级收藏纸质感", en: "museum-grade archival sheet aesthetic" },
+      { cn: "包豪斯工坊海报气质", en: "Bauhaus workshop poster temperament" },
+      { cn: "晚期现代肃穆感", en: "late-modern solemn typography" }
+    ]
+  },
+
+  casual_mirror_outfit: {
+    label: { cn: "镜子自拍穿搭与配饰", en: "Mirror Outfit & Accessories" },
+    category: "character",
+    options: [
+      {
+        cn: "穿着全套黑色的休闲装，斜挎着一个包，头上戴着太阳镜",
+        en: "wearing an all-black relaxed casual outfit with a crossbody bag and sunglasses perched on her head"
+      },
+      {
+        cn: "身穿燕麦米色针织套装与同色棒球帽，肩背迷你链条包",
+        en: "wearing an oatmeal knit co-ord set with a tonal baseball cap and a mini chain-strap shoulder bag"
+      },
+      {
+        cn: "炭灰工装夹克配黑色骑行短裤，腰间斜挎亮色尼龙小包，头戴猫眼墨镜",
+        en: "charcoal utility jacket over black bike shorts with a neon nylon crossbody and cat-eye sunglasses on her head"
+      },
+      {
+        cn: "白色宽松衬衫半扎进高腰牛仔裤，草编托特包与肩挂耳机",
+        en: "billowy white shirt half-tucked into high-waist jeans with a woven tote slung overhead and wired headphones draped around her shoulders"
+      },
+      {
+        cn: "短款羽绒背心叠穿连帽卫衣，束脚慢跑裤与地面色系运动鞋",
+        en: "cropped puffer layered over hoodie with cinched joggers and earth-tone trainers"
+      },
+      {
+        cn: "丝绒运动套装与同色渔夫帽，透明框眼镜推高在发际",
+        en: "matching velour tracksuit with a bucket hat and crystal-clear framed glasses resting on top of her head"
+      },
+      {
+        cn: "淡紫短款针织开衫与百褶迷你裙，斜挎马鞍包与蝴蝶结发夹",
+        en: "lilac cropped cardigan with pleated mini skirt, saddle crossbody, and satin bow clips"
+      },
+      {
+        cn: "黑皮革飞行员夹克内搭白T恤，阔腿牛仔与厚底短靴",
+        en: "black faux-leather aviator jacket over a white tee, wide-leg denim, and chunky Chelsea boots"
+      }
+    ]
+  },
+
+  chibi_clone_manner: {
+    label: { cn: "Q版迷你自己", en: "Chibi Clone Behavior" },
+    category: "character",
+    options: [
+      {
+        cn: "摆出各种俏皮的姿势（跳跃、坐着、比耶、喝珍珠奶茶），有着明亮闪亮的大眼睛和柔和的卡通风格",
+        en: "striking playful poses (jumping, sitting, peace sign, sipping bubble tea) with bright sparkling eyes and a soft cartoon look"
+      },
+      {
+        cn: "有的在自拍连拍、有的在抱枕头打滚、有的在举咖啡杯干杯",
+        en: "some snapping selfies, others hugging cushions mid-roll, one toasting tiny coffee cups toward the viewer"
+      },
+      {
+        cn: "手拉手转圈、比爱心、倒立踢腿，眼珠高光像糖果釉",
+        en: "hand-in-hand spins, forming heart hands, cheeky cartwheels—eyes glazed like candy-coated highlights"
+      },
+      {
+        cn: "围成一排做鬼脸、敬礼、比心，发丝像棉花糖云朵",
+        en: "queued up making silly faces, saluting, throwing finger hearts—hair tufts sculpted like pastel cotton candy"
+      },
+      {
+        cn: "蹲在肩膀上当导航精灵、指路、举牌写「today mood」",
+        en: "perched on shoulders like sprites pointing directions and holding handwritten Today Mood signs"
+      },
+      {
+        cn: "打迷你太极、敷面膜、踮脚挂画，像在帮忙布置房间",
+        en: "mini tai-chi gestures, masking together, stretching on tiptoes to hang frames as if staging the apartment"
+      },
+      {
+        cn: "踩在沙发沿走平衡木、端着迷你甜品塔、仰头大笑",
+        en: "balancing along sofa edges balancing like beams, hauling tiny dessert tiers, giggling upwards with open mouths"
+      },
+      {
+        cn: "戴同款迷你墨镜排成V字编队，像在拍女团封面",
+        en: "lining up in mirrored micro-sunglasses in a V formation like a idol group key visual"
+      }
+    ]
+  },
+
+  cozy_mirror_room: {
+    label: { cn: "镜面房间陈设", en: "Mirror Room Set" },
+    category: "location",
+    options: [
+      {
+        cn: "背景包括一盆盆栽、木桌、中性色调的装饰和带框艺术品",
+        en: "The background includes a potted plant, a wooden table, neutral-toned décor, and framed artwork"
+      },
+      {
+        cn: "落地镜旁有藤编置物架、米色地毯与陶瓷花瓶里的干芦苇",
+        en: "Floor-length mirror framed by wicker shelving, oatmeal rug, and dried pampas in a ceramic vase"
+      },
+      {
+        cn: "浅橡木置物板、黄铜壁灯抽象画与小型琴叶榕",
+        en: "floating oak shelving, brushed brass sconces beside abstract lithographs, and a compact fiddle-leaf fig"
+      },
+      {
+        cn: "白色石膏雕塑、哑光灰墙面与半透明亚麻窗帘透出柔光",
+        en: "plaster objet on plinths, matte grey walls with sheer linen curtain diffusing daylight"
+      },
+      {
+        cn: "窗边阅读角：堆叠画报、玻璃杯里的冰咖啡与米色针织披毯",
+        en: "window reading nook with stacked magazines, iced coffee sweating in a ribbed glass, and a knit throw"
+      },
+      {
+        cn: "洞洞板上挂耳机与小盆栽，桌面上香薰蜡烛与速写本",
+        en: "pegboard with headphones clipped beside mini succulents, desk scented candle and charcoal sketch pads"
+      },
+      {
+        cn: "哑光黑金属框镜子、碳化木边几与单色摄影挂画",
+        en: "dark metal mirror frame beside char-stained wood side table with monochrome photographic prints"
+      },
+      {
+        cn: "软陶花瓶、沙丘色微水泥墙面与悬浮式 LED 灯带",
+        en: "soft clay vases, dunes-toned micro-ceiling walls, recessed LED ribbons washing the alcove evenly"
+      }
+    ]
+  },
+
+  selfie_render_blend: {
+    label: { cn: "光影与混搭画风", en: "Light & Hybrid Style" },
+    category: "visual",
+    options: [
+      {
+        cn: "柔和的自然光线，舒适的氛围美学，白色的涂鸦闪光和爱心，现实主义与可爱的3D卡通风格的混合，高细节",
+        en: "Soft natural light, cozy lifestyle aesthetic, white doodled sparkles and hearts, hybrid of photorealism and cute 3D cartoon, highly detailed"
+      },
+      {
+        cn: "南向窗柔和的晨雾漫射光，微尘颗粒与手绘星星贴纸叠在前景",
+        en: "hazy southern window morning light with visible dust motes layered under hand-painted star decals in foreground"
+      },
+      {
+        cn: "胶片感颗粒、暖调高键曝光，霓虹粉手写涂鸦却只出现在Q版身上",
+        en: "fine film grain with warm high-key exposure, neon-pink handwritten doodles constrained to chibi sprites only"
+      },
+      {
+        cn: "黄金时刻侧光拉出清晰轮廓线，粉笔质感的爱心沿着镜框飞舞",
+        en: "golden-hour side rays carving crisp contours, chalk-textured hearts fluttering along the mirror frame edges"
+      },
+      {
+        cn: "柔和的顶光+环形补光，让真人肤质干净，Q版则呈搪瓷釉面高光",
+        en: "soft top light plus faint ring-fill keeping skin immaculate while chibi forms read enamel-gloss highlighted"
+      },
+      {
+        cn: "阴天漫射平顶光，水彩晕染的闪光点悬浮在空中",
+        en: "flat overcast diffuser lighting with watercolor-bleeded sparkle motes drifting mid-air"
+      },
+      {
+        cn: "低对比冷暖平衡，景深微浅仅突出镜面中心，贴纸风月亮与云朵点缀角落",
+        en: "low-contrast balanced cool-warm grading, shallow DOF favoring lens center mirror with sticker moons drifting in corners"
+      }
+    ]
+  },
+
+  street_film_photography: {
+    label: { cn: "摄影风格", en: "Photography Style" },
+    category: "visual",
+    options: [
+      {
+        cn: "90年代经典街拍质感，FujiFilm 胶片感：细腻颗粒、略褪色与柔和对比，阴天漫射自然光",
+        en: "1990s classic street-snap feel with Fujifilm texture—fine grain, gentle fade, soft contrast, diffused overcast daylight"
+      },
+      {
+        cn: "FujiFilm Superia / 400 彩负：略带品红与奶黄中间调，街头快照的即兴取景感",
+        en: "Fujifilm Superia / 400 color negative—slight magenta lift with milky midtones, candid snapshot framing"
+      },
+      {
+        cn: "Kodak Gold 200 暖调颗粒，高光柔软、阴影轻绿，略带哈气的阴天伦敦氛围",
+        en: "Kodak Gold 200 warmth with grain, soft highlights, subtle green shadows misty London mood"
+      },
+      {
+        cn: "Ilford HP5 黑白街拍：粗颗粒、高宽容度，强调结构与雨后沥青反光",
+        en: "Ilford HP5 black-and-white street: bold grain, wide latitude, accentuating structure and wet asphalt sheen"
+      },
+      {
+        cn: "90年代幻灯片正片质感：略过曝天空、边缘暗角、铬与玻璃的高光锐边",
+        en: "1990s slide-film look: slightly blown skies, natural vignetting, crisp specular edges on chrome and glass"
+      },
+      {
+        cn: "康泰时 T* 镜头的轻微柔焦高光与纵向色差，像相册里翻出来的旅行底片",
+        en: "Contax T* soft highlight bloom with mild longitudinal CA, like a travel frame from a photo album"
+      },
+      {
+        cn: "新闻纪实 135 彩负：中性灰场、低饱和但保留乐高原色，人物与车流略动感模糊",
+        en: "Editorial 135 color negative—neutral gray field, desaturated ambience yet LEGO primaries pop, mild motion blur on traffic"
+      },
+      {
+        cn: "金调偏光日出侧逆光，长阴影，电影感青橙分离（保持胶片颗粒）",
+        en: "golden-hour side backlight with long shadows, cinematic teal-orange split while retaining analog grain"
+      }
+    ]
   }
 };
 
@@ -3126,6 +3646,59 @@ export const INITIAL_DEFAULTS = {
   utility_app_category: { cn: "植物照顾养护记录", en: "plant care and maintenance tracker" },
   subject_product: { cn: "草莓苏打水", en: "Strawberry Soda" },
   apple_style_product: { cn: "3.5寸软盘", en: "3.5-inch Floppy Disk" },
-  layout_style_bento: { cn: "BentoCard", en: "BentoCard" }
+  layout_style_bento: { cn: "BentoCard", en: "BentoCard" },
+  arch_building_name: { cn: "古根海姆博物馆", en: "Solomon R. Guggenheim Museum" },
+  lego_typography_theme: { cn: "AI时代的玩具", en: "Toys in the Age of AI" },
+  sport_luxe_ensemble: {
+    cn: "带有庞大袖子的超大白色极简连帽衫，光滑半透明的降落伞裤，厚重的白橙相间运动鞋",
+    en: "oversized minimalist white hoodie with enormous voluminous sleeves, glossy semi-transparent parachute pants, chunky white-and-orange sneakers"
+  },
+  beauty_editorial_look: {
+    cn: "时尚凌乱的盘发发型，金色抢眼耳环，柔和自然的妆容",
+    en: "fashionably messy updo bun, bold statement gold earrings, soft natural makeup"
+  },
+  inflatable_studio_backdrop: {
+    cn: "大型抽象光滑红粉色有机3D充气软体形状的平滑中性米色渐变背景",
+    en: "large abstract smooth red-pink organic 3D inflatable soft shapes on a smooth neutral beige gradient backdrop"
+  },
+  hero_typography_word: { cn: "just", en: "just" },
+  campaign_brand_word: { cn: "APEX", en: "APEX" },
+  model_styling_outfit: {
+    cn: "身穿薄荷绿短款防风外套与乳白色宽松慢跑裤",
+    en: "in a mint cropped windbreaker with cream oversized joggers"
+  },
+  studio_set_floor: {
+    cn: "暖沙色柔光环境与浅琥珀色打蜡地面",
+    en: "warm sand-toned soft light with lightly amber-waxed glossy floorboards"
+  },
+  advert_campaign_tagline: {
+    cn: "Where comfort meets ambition.",
+    en: "Where comfort meets ambition."
+  },
+  iconic_architecture: {
+    cn: "范斯沃斯住宅（密斯·凡·德罗）",
+    en: "Farnsworth House (Mies van der Rohe)"
+  },
+  poster_art_style: { cn: "极简主义", en: "minimalist" },
+  casual_mirror_outfit: {
+    cn: "穿着全套黑色的休闲装，斜挎着一个包，头上戴着太阳镜",
+    en: "wearing an all-black relaxed casual outfit with a crossbody bag and sunglasses perched on her head"
+  },
+  chibi_clone_manner: {
+    cn: "摆出各种俏皮的姿势（跳跃、坐着、比耶、喝珍珠奶茶），有着明亮闪亮的大眼睛和柔和的卡通风格",
+    en: "striking playful poses (jumping, sitting, peace sign, sipping bubble tea) with bright sparkling eyes and a soft cartoon look"
+  },
+  cozy_mirror_room: {
+    cn: "背景包括一盆盆栽、木桌、中性色调的装饰和带框艺术品",
+    en: "The background includes a potted plant, a wooden table, neutral-toned décor, and framed artwork"
+  },
+  selfie_render_blend: {
+    cn: "柔和的自然光线，舒适的氛围美学，白色的涂鸦闪光和爱心，现实主义与可爱的3D卡通风格的混合，高细节",
+    en: "Soft natural light, cozy lifestyle aesthetic, white doodled sparkles and hearts, hybrid of photorealism and cute 3D cartoon, highly detailed"
+  },
+  street_film_photography: {
+    cn: "90年代经典街拍质感，FujiFilm 胶片感：细腻颗粒、略褪色与柔和对比，阴天漫射自然光",
+    en: "1990s classic street-snap feel with Fujifilm texture—fine grain, gentle fade, soft contrast, diffused overcast daylight"
+  }
 };
 
